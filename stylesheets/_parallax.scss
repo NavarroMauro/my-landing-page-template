@@ -1,0 +1,12 @@
+body {
+    div.parallax {
+        background-image: url("../img/hh_landscape.jpg");
+        // max-height: 100%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 20vw;
+        margin: 3em 0;
+    }
+}

@@ -1,0 +1,61 @@
+section.info_contact {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    padding: 3vw;
+    background-color: black;
+    // padding: 1vw;
+    
+
+    div.item {
+        flex-grow: 1;
+        flex: 1 50%;
+    }
+
+  div.form {
+    h2 {
+        text-align: center;
+        margin-bottom: 2vw;
+        color: darkgrey;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        input[type=text] {
+            margin-bottom: 5vw;
+            width: 90%;
+            padding: 1vw 2vw;
+            border: 1px solid darkgray;
+            font-size: 1.5vw;
+        }
+
+      textarea {
+          width: 90%;
+          height: 20vw;
+          margin-bottom: 5vw;
+          border: 1px solid darkgray;
+          font-size: 1.5vw;
+          padding: 2vw;
+      }
+
+      button {
+          padding: .5vw;
+          font-size: 2vw;
+          width: 90%;
+          border: 1px solid lightgray;
+          background-color: white;
+          &:hover {
+              background-color: lightgray;
+          }
+      } 
+    }
+  }
+
+  div#map {
+    height: auto;
+    flex-grow: 2;
+  }
+}

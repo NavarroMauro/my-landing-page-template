@@ -1,0 +1,323 @@
+body {
+  margin: 0;
+}
+
+body nav {
+  padding: 1.5vw 0;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: rgba(44, 44, 47, 0.8);
+}
+
+body nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+body nav li {
+  margin-left: 1vw;
+  margin-right: 1vw;
+  color: white;
+  font-size: 1.5vw;
+}
+
+body nav li:hover {
+  cursor: pointer;
+  opacity: .5;
+}
+
+div.slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  position: relative;
+}
+
+div.slider img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-transition: -webkit-transform .4s ease-out;
+  transition: -webkit-transform .4s ease-out;
+  transition: transform .4s ease-out;
+  transition: transform .4s ease-out, -webkit-transform .4s ease-out;
+}
+
+div.slider span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.slider span i {
+  position: absolute;
+  width: 1.5vw;
+  height: 1.5vw;
+  border: solid rgba(255, 255, 255, 0.479);
+  border-width: 1vw 1vw 0 0;
+  z-index: 5;
+  color: #ccc;
+}
+
+div.slider span i:nth-of-type(1) {
+  right: 5%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+div.slider span i:nth-of-type(2) {
+  left: 5%;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+
+div.slider span i:hover {
+  cursor: pointer;
+}
+
+body section#offer {
+  margin-top: 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body section#offer div {
+  min-width: 250px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border: 1px solid #ccc;
+  padding: 2em;
+  margin: 1em;
+  text-align: center;
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+}
+
+body section#offer div svg:hover {
+  fill: slateblue;
+}
+
+body section#offer div div {
+  font-size: 1.5vw;
+  border: 0;
+}
+
+body section#offer button {
+  font-size: 2vw;
+  padding: .2vw;
+  width: 100%;
+  color: white;
+  background: slateblue;
+}
+
+section.info_contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100vw;
+  padding: 3vw;
+  background-color: black;
+}
+
+section.info_contact div.item {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex: 1 50%;
+      flex: 1 50%;
+}
+
+section.info_contact div.form h2 {
+  text-align: center;
+  margin-bottom: 2vw;
+  color: darkgrey;
+}
+
+section.info_contact div.form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.info_contact div.form form input[type=text] {
+  margin-bottom: 5vw;
+  width: 90%;
+  padding: 1vw 2vw;
+  border: 1px solid darkgray;
+  font-size: 1.5vw;
+}
+
+section.info_contact div.form form textarea {
+  width: 90%;
+  height: 20vw;
+  margin-bottom: 5vw;
+  border: 1px solid darkgray;
+  font-size: 1.5vw;
+  padding: 2vw;
+}
+
+section.info_contact div.form form button {
+  padding: .5vw;
+  font-size: 2vw;
+  width: 90%;
+  border: 1px solid lightgray;
+  background-color: white;
+}
+
+section.info_contact div.form form button:hover {
+  background-color: lightgray;
+}
+
+section.info_contact div#map {
+  height: auto;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+}
+
+body div.parallax {
+  background-image: url("../img/hh_landscape.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20vw;
+  margin: 3em 0;
+}
+
+body footer {
+  background: black;
+  height: auto;
+  padding: 2em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body footer i.up {
+  width: 4em;
+  height: 4em;
+  border: solid rgba(255, 255, 255, 0.479);
+  border-width: 1px 1px 0 0;
+  z-index: 5;
+  color: #ccc;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+body footer i.up:hover {
+  cursor: pointer;
+  margin: red;
+}
+
+body footer p {
+  background: black;
+  color: white;
+}
+
+.container {
+  padding-top: 6vh;
+  max-width: 80vw;
+  height: 60vh;
+  margin: 0 auto;
+}
+
+.container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.container ul li {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.container ul li a {
+  text-decoration: none;
+  color: darkgray;
+  padding: 0 2vw;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  border-bottom: 1px solid transparent;
+}
+
+.container ul li a:hover {
+  color: white;
+  background: slateblue;
+}
+
+.nav .active a {
+  color: slateblue;
+  border-bottom: 1px solid slateblue;
+}
+
+.nav .active a:hover {
+  border-color: transparent;
+  background: darkgray;
+  color: white;
+}
+
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
+  margin-top: 3vw;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*# sourceMappingURL=app.css.map */
