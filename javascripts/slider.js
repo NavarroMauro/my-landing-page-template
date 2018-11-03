@@ -1,4 +1,4 @@
-let images = document.querySelectorAll('div.slider > div');
+let images = document.querySelectorAll('div.slider > img');
 
 let lArrow = document.querySelector('.left');
 let rArrow = document.querySelector('.right');
