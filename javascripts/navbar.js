@@ -15,7 +15,7 @@ for(let i = 0; i < showDropDown.length; i++){
 }
 
 for(let n = 0; n < showDropDown.length; n++){
-    document.body.addEventListener('mouseover', function (ev) {
+    showDropDown[n].addEventListener('mouseleave', function (ev) {
       if (ulDropDown[n].classList.contains("active")) {
         ulDropDown[n].classList.remove("active");
       }
