@@ -197,6 +197,9 @@ section:nth-of-type(2) div div img:hover {
 
 section:nth-of-type(2) div div ul {
   display: none;
+  flex-direction: column;
+  margin-top: 2vw;
+  align-items: center;
 }
 
 section:nth-of-type(2) div div ul a {
@@ -205,8 +208,9 @@ section:nth-of-type(2) div div ul a {
   margin-top: 1.5vw;
 }
 
-section:nth-of-type(2) div div .imgMenu {
+.imgMenu {
   display: block;
+<<<<<<< HEAD
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -215,6 +219,8 @@ section:nth-of-type(2) div div .imgMenu {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+=======
+>>>>>>> responsiveDesign
 }
 
 body section#offer {
