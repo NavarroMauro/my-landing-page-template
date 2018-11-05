@@ -172,6 +172,8 @@ section:nth-of-type(2) div div li {
 }
 
 section:nth-of-type(2) div div img {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
   border-radius: 50%;
   width: 75%;
 }
@@ -184,9 +186,14 @@ section:nth-of-type(2) div div img:hover {
 
 section:nth-of-type(2) div div ul {
   display: none;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-top: 2vw;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 section:nth-of-type(2) div div ul a {
@@ -197,17 +204,6 @@ section:nth-of-type(2) div div ul a {
 
 .imgMenu {
   display: block;
-<<<<<<< HEAD
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-top: 2vw;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-=======
->>>>>>> responsiveDesign
 }
 
 body section#offer {
