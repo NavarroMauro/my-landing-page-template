@@ -55,6 +55,7 @@ section.info_contact {
   }
 
   div#map {
+      z-index: 1;
     height: auto;
     flex-grow: 2;
   }
