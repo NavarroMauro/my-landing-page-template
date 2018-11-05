@@ -8,9 +8,8 @@ for (let i = 0; i < imgDiv2.length; i++){
     // ev.stopPropagation();
     for (let j = 0; j < p.length; j++){
       if(imgMenuClick[j].classList.contains("imgMenu")){
-        imgMenuClick[j].classList.remove("imgMenu");
+        imgMenuClick[j].classList.toggle("imgMenu");
       }
-
     }
     imgMenuClick[i].classList.add("imgMenu");
   })
