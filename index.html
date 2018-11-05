@@ -15,52 +15,117 @@
 </head>
 
 <body>
+
+  <!-- nav begin from here -->
   <nav>
-
     <ul>
-      <li><i class="fas fa-fish"></i></li>
-      <li>LOGO</li>
+     <span>Logo</span>
     </ul>
-
-    <ul>
-      <li><a href="#">HOME</a></li>
-      <li><a href="#">WHO WE ARE</a></li>
-      <li><a href="#">OFFER</a></li>
-      <li><a href="#">CONTACT</a></li>
-      <li><a href="#">MORE</a></li>
-      <li><i class="fas fa-search"></i></li>
-      <span class="navbar-toggle" id="js-navbar-toggle">
-        <i class="fas fa-bars"></i>
-      </span>
-    </ul>
-
+   <ul>
+      <li>Home
+        <ul class="dropDown">
+            <a href="#">Merchandise</a>
+            <a href="#">Extras</a>
+            <a href="#">Media</a>
+        </ul>
+      </li>
+      <li>About Us
+        <ul class="dropDown">
+            <a href="#">Merchandise</a>
+            <a href="#">Extras</a>
+            <a href="#">Media</a>
+        </ul>
+      </li>
+      <li>Service
+        <ul class="dropDown">
+            <a href="#">Merchandise</a>
+            <a href="#">Extras</a>
+            <a href="#">Media</a>
+        </ul>
+      </li>
+      <li>Contact
+        <ul class="dropDown">
+            <a href="#">Merchandise</a>
+            <a href="#">Extras</a>
+            <a href="#">Media</a>
+        </ul>
+      </li>
+   </ul>
   </nav>
 
   <!-- From here start the slider -->
 
-  <div class="slider">
-    <span>
-      <i class="arrow right"></i>
-      <i class="arrow left"></i>
-    </span>
-    <figure>
-      <img src="img/hh_chanel.jpg" alt="">
-      <figcaption>Picture 1</figcaption>
-    </figure>
-    <figure>
-      <img src="img/hh_chanel2.jpg" alt="">
-      <figcaption>Picture 2</figcaption>
-    </figure>
-    <figure>
-      <img src="img/hh_filarmonic.jpg" alt="">
-      <figcaption>Picture 3</figcaption>
-    </figure>
-    <figure>
-      <img src="img/hh_stairs.jpg" alt="">
-      <figcaption>Picture 4</figcaption>
-    </figure>
-  </div>
+  <section id="info_box">
+  <i class="fa fa-arrow-circle-left"></i>
+      <img src="img/1.jpg" alt="">
+      <img src="img/2.jpg" alt="">
+      <img src="img/3.jpg" alt="">
+      <img src="img/4.jpg" alt="">
+      <img src="img/5.jpg" alt="">
+      <img src="img/6.jpg" alt="">
+      <img src="img/7.jpg" alt="">
+      <img src="img/8.jpg" alt="">
+      <img src="img/9.jpg" alt="">
+      <img src="img/10.jpg" alt="">
+      <img src="img/11.jpg" alt="">
+  <i class="fa fa-arrow-circle-right"></i>
+  </section>
 
+
+  <!-- here begin the info_box -->
+
+  <section >
+    <h2>THE BAND</h2>
+    <p>La Musica es el lenguaje Universal!</p><br>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      Veniam ex culpa eaque, quo ad, voluptas deserunt, similique
+      accusamus, nesciunt laudantium provident. Animi asperiores
+      repellat, non molestiae quam sunt et rem.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      Veniam ex culpa eaque, quo ad, voluptas deserunt, similique
+      accusamus, nesciunt laudantium provident. Animi asperiores
+      repellat, non molestiae quam sunt et rem.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      Veniam ex culpa eaque, quo ad, voluptas deserunt, similique
+      accusamus, nesciunt laudantium provident. Animi asperiores
+      repellat, non molestiae quam sunt et rem.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      Veniam ex culpa eaque, quo ad, voluptas deserunt, similique
+      accusamus, nesciunt laudantium provident. Animi asperiores
+      repellat, non molestiae quam sunt et rem</p>
+    <div>
+
+          <div>
+              <li>Name</li>
+              <img src="https://www.w3schools.com/bootstrap/bandmember.jpg" alt="">
+              <ul>
+                <a href="">Guitarist and Lead Vocalist</a>
+                <a href="">Loves long walks on the beach</a>
+                <a href="">Member since 1988</a>
+              </ul>
+          </div>
+          <div>
+              <li>Name</li>
+              <img src="https://www.w3schools.com/bootstrap/bandmember.jpg" alt="">
+              <ul>
+                <a href="">Guitarist and Lead Vocalist</a>
+                <a href="">Loves long walks on the beach</a>
+                <a href="">Member since 1988</a>
+              </ul>
+          </div>
+          <div>
+              <li>Name</li>
+              <img src="https://www.w3schools.com/bootstrap/bandmember.jpg" alt="">
+              <ul>
+                <a href="">Guitarist and Lead Vocalist</a>
+                <a href="">Loves long walks on the beach</a>
+                <a href="">Member since 1988</a>
+              </ul>
+          </div>
+    </div>
+  </section>
+
+<!-- here start offer -->
   <section id="offer">
     <div>
       <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
@@ -371,6 +436,8 @@
     </div>
   </section>
 
+  <!-- Here start the info contact -->
+
   <section class="info_contact">
     <div class="item form">
       <h2>CONTACT</h2>
@@ -440,8 +507,6 @@
   <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
     crossorigin=""></script>
 
-  <!--  -->
-  <script type="text/javascript" src="javascripts/app.js"></script>
 
   <!-- Here Map JavaScript App -->
   <script type="text/javascript" src="javascripts/llmap.js"></script>
@@ -449,6 +514,10 @@
   <script type="text/javascript" src="javascripts/tabs.js"></script>
 
   <script type="text/javascript" src="javascripts/slider.js"></script>
+
+  <script type="text/javascript" src="javascripts/navbar.js"></script>
+
+
 
 </body>
 
