@@ -247,7 +247,12 @@ body section#offer div:hover svg {
   fill: black;
 }
 
+body section#offer div:hover div {
+  color: black;
+}
+
 body section#offer div div {
+  color: darkgray;
   font-size: 1.5vw;
   border: 0;
 }
@@ -262,7 +267,7 @@ body section#offer button {
 }
 
 body section#offer button:hover {
-  background-color: darkgray;
+  background-color: black;
   color: white;
 }
 

@@ -20,8 +20,12 @@ body {
                 svg {
                     fill: black;
                 }
+                div {
+                    color: black;
+                }
             }
             div {
+                color: darkgray;
                 font-size: 1.5vw;
                 border: 0;
             }
@@ -36,7 +40,7 @@ body {
             background: white;
             border: 1px solid darkgray;
             &:hover {
-                background-color: darkgray;
+                background-color: black;
                 color: white;
             } 
         }
