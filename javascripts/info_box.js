@@ -6,9 +6,9 @@ console.log(imgMenuClick);
 for (let i = 0; i < imgDiv2.length; i++){
   imgDiv2[i].addEventListener('click', function(ev) {
     // ev.stopPropagation();
-    for (let j = 0; j < p.length; j++){
+    for (let j = 0; j < imgDiv2.length; j++){
       if(imgMenuClick[j].classList.contains("imgMenu")){
-        imgMenuClick[j].classList.toggle("imgMenu");
+        imgMenuClick[j].classList.remove("imgMenu");
       }
     }
     imgMenuClick[i].classList.add("imgMenu");

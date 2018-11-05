@@ -44,22 +44,21 @@ section:nth-of-type(2){
       }
 
       ul{
-        display: none;
+        display: flex;
         flex-direction: column;
         margin-top: 2vw;
         align-items: center;
-        a{
-        text-decoration: none;
-        text-align: center;
-        margin-top: 1.5vw;
+        p{
+        display: none;
+        }
+        .imgMenu{
+          display: flex;
+          text-decoration: none;
+          text-align: center;
+          margin-top: 1.5vw;
         }
       }
 
     }
   }
-}
-
-.imgMenu{
-  display: block;
-
 }
