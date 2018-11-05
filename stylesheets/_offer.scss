@@ -14,8 +14,11 @@ body {
             text-align: center;
             flex-grow: 1;
             svg {
-                &:hover {
-                    fill: slateblue;
+                fill: darkgray;
+            }
+            &:hover {
+                svg {
+                    fill: black;
                 }
             }
             div {
@@ -29,8 +32,13 @@ body {
             }
             padding: .2vw;
             width: 100%;
-            color: white;
-            background: slateblue;
+            color: darkgray;
+            background: white;
+            border: 1px solid darkgray;
+            &:hover {
+                background-color: darkgray;
+                color: white;
+            } 
         }
     }
 }

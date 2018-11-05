@@ -113,6 +113,10 @@ div.slider figure {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: -webkit-transform 1s ease-out;
+  transition: -webkit-transform 1s ease-out;
+  transition: transform 1s ease-out;
+  transition: transform 1s ease-out, -webkit-transform 1s ease-out;
 }
 
 div.slider figure img {
@@ -155,8 +159,12 @@ body section#offer div {
       flex-grow: 1;
 }
 
-body section#offer div svg:hover {
-  fill: slateblue;
+body section#offer div svg {
+  fill: darkgray;
+}
+
+body section#offer div:hover svg {
+  fill: black;
 }
 
 body section#offer div div {
@@ -168,8 +176,14 @@ body section#offer button {
   font-size: 2vw;
   padding: .2vw;
   width: 100%;
+  color: darkgray;
+  background: white;
+  border: 1px solid darkgray;
+}
+
+body section#offer button:hover {
+  background-color: darkgray;
   color: white;
-  background: slateblue;
 }
 
 section.info_contact {

@@ -4,6 +4,9 @@ let lArrow = document.querySelector('.left');
 let rArrow = document.querySelector('.right');
 let score = 0;
 
+document.body.addEventListener('load', (ev) => {
+    
+})
 
 rArrow.addEventListener('click', (ev) => {
     score++;
