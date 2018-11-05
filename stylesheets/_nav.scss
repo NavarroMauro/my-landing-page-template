@@ -1,5 +1,6 @@
 body {
   margin: 0;
+
   nav {
     padding: 1.5vw 0;
     z-index: 999;
@@ -8,19 +9,33 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    background: rgba(44,44,47, 0.8);
-    ul{
-    display: flex;
-    list-style-type: none;
-    }
-    li{
-      margin-left: 1vw;
-      margin-right: 1vw;
-      color: white;
-      font-size: 1.5vw;
-      &:hover{
-        cursor: pointer;
-        opacity: .5;
+    background: rgba(44, 44, 47, 0.8);
+
+    ul {
+      display: flex;
+      align-items: center;
+      li {
+        list-style-type: none;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        color: darkgray;
+        i {
+          font-size: 4vw;
+        }
+
+        &:hover {
+          cursor: pointer;
+          opacity: .5;
+        }
+        a {
+          text-decoration: none;
+          color: white;
+          font-size: 1.5vw;
+        }
+      }
+      span {
+        color: darkgray;
+        padding-right: 1vw;
       }
     }
   }
