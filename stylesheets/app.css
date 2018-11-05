@@ -59,23 +59,6 @@ div.slider {
   display: flex;
   width: 100%;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.5);
-  overflow: hidden;
-  position: relative;
-}
-
-div.slider img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  overflow: hidden;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  -webkit-transition: -webkit-transform .4s ease-out;
-  transition: -webkit-transform .4s ease-out;
-  transition: transform .4s ease-out;
-  transition: transform .4s ease-out, -webkit-transform .4s ease-out;
 }
 
 div.slider span {
@@ -92,10 +75,10 @@ div.slider span {
 
 div.slider span i {
   position: absolute;
-  width: 1.5vw;
-  height: 1.5vw;
+  width: 2vw;
+  height: 2vw;
   border: solid rgba(255, 255, 255, 0.479);
-  border-width: 1vw 1vw 0 0;
+  border-width: .7vw .7vw 0 0;
   z-index: 5;
   color: #ccc;
 }
@@ -114,6 +97,40 @@ div.slider span i:nth-of-type(2) {
 
 div.slider span i:hover {
   cursor: pointer;
+}
+
+div.slider figure {
+  width: 100%;
+  height: 100%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div.slider figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+
+div.slider figure figcaption {
+  position: absolute;
+  color: #d6caca;
+  font-size: 4vw;
+  margin-bottom: 5vw;
+  padding: 1vw 3vw;
+  background-color: rgba(39, 36, 36, 0.493);
+  border-radius: 15px;
 }
 
 body section#offer {
