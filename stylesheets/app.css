@@ -21,19 +21,36 @@ body nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  list-style-type: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-body nav li {
+body nav ul li {
+  list-style-type: none;
   margin-left: 1vw;
   margin-right: 1vw;
+  color: darkgray;
+}
+
+body nav ul li i {
+  font-size: 4vw;
+}
+
+body nav ul li:hover {
+  cursor: pointer;
+  opacity: .5;
+}
+
+body nav ul li a {
+  text-decoration: none;
   color: white;
   font-size: 1.5vw;
 }
 
-body nav li:hover {
-  cursor: pointer;
-  opacity: .5;
+body nav ul span {
+  color: darkgray;
+  padding-right: 1vw;
 }
 
 div.slider {
