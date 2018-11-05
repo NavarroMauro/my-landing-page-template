@@ -13,19 +13,6 @@
   width: 12vw;
 }
 
-.dropDown a {
-  background: white;
-  color: black;
-  text-decoration: none;
-  padding: 1vw 1vw;
-}
-
-.dropDown a:hover {
-  color: white;
-  background: rgba(44, 44, 47, 0.5);
-  border-bottom: 2px solid red;
-}
-
 .active {
   display: flex;
 }
@@ -146,6 +133,8 @@ section:nth-of-type(2) div div li {
 }
 
 section:nth-of-type(2) div div img {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
   border-radius: 50%;
   width: 75%;
 }
@@ -156,10 +145,20 @@ section:nth-of-type(2) div div img:hover {
 }
 
 section:nth-of-type(2) div div ul {
+<<<<<<< HEAD
   display: flex;
   flex-direction: column;
+=======
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+>>>>>>> c312676e6b3e68e1fe44f333b94213ae4fbd33fc
   margin-top: 2vw;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 section:nth-of-type(2) div div ul p {
@@ -173,6 +172,13 @@ section:nth-of-type(2) div div ul .imgMenu {
   margin-top: 1.5vw;
 }
 
+<<<<<<< HEAD
+=======
+.imgMenu {
+  display: block;
+}
+
+>>>>>>> c312676e6b3e68e1fe44f333b94213ae4fbd33fc
 body section#offer {
   margin-top: 5vw;
   display: flex;
