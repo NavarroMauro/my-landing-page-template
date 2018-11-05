@@ -1,7 +1,6 @@
 .container {
-  padding-top: 6vh;
   max-width: 80vw;
-  height: 60vh;
+  height: 20vh;
   margin: 0 auto;
   ul {
     list-style: none;
@@ -9,11 +8,21 @@
   
     li {
       display: inline-flex;
+      list-style: none;
+      padding: 1vw;
+      font-size: 2.5vw;
+      &:nth-of-type(1) {
+        border-right: 0.1vw solid black;
+      }
+      &:hover {
+        cursor: pointer;
+        background: darkgray;
+      }
 
       a {
-        text-decoration: none;
+        font-size: 2.5vw;        text-decoration: none;
         color: darkgray;
-        padding: 0 2vw;
+        margin: 2vw;
         transition: all .3s ease-in-out;
         border-bottom: 1px solid transparent;
   
@@ -21,6 +30,7 @@
           color: white;
           background: slateblue;
         }
+      
       }
     }
   }
@@ -44,5 +54,6 @@
 .tab-pane.active {
   display: block;
   margin-top: 3vw;
-  // line-height: 3vw;
+  line-height: 3vw;
+  padding-bottom: 2vh;
 }

@@ -47,7 +47,7 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 10;
   height: 5.2vw;
 }
 
@@ -399,9 +399,8 @@ body footer p {
 }
 
 .container {
-  padding-top: 6vh;
   max-width: 80vw;
-  height: 60vh;
+  height: 20vh;
   margin: 0 auto;
 }
 
@@ -414,12 +413,25 @@ body footer p {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  list-style: none;
+  padding: 1vw;
+  font-size: 2.5vw;
+}
+
+.container ul li:nth-of-type(1) {
+  border-right: 0.1vw solid black;
+}
+
+.container ul li:hover {
+  cursor: pointer;
+  background: darkgray;
 }
 
 .container ul li a {
+  font-size: 2.5vw;
   text-decoration: none;
   color: darkgray;
-  padding: 0 2vw;
+  margin: 2vw;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   border-bottom: 1px solid transparent;
@@ -448,6 +460,8 @@ body footer p {
 .tab-pane.active {
   display: block;
   margin-top: 3vw;
+  line-height: 3vw;
+  padding-bottom: 2vh;
 }
 
 * {

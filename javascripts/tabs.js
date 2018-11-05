@@ -1,22 +1,16 @@
 /*  Let's Build: Dynamic Tabs  */
-
-function onTabClick(event) {
-    let activeTabs = document.querySelectorAll('.active');
-    
-    // deactivate existing active tab and panel
-    // for( let i = 0; i < activeTabs.length; i++) {
-    //   activeTabs[i].className = activeTabs[i].className.replace('active', '');
-    // }
-    
-    activeTabs.forEach(function(tab) {
-      tab.className = tab.className.replace('active', '');
-    });
-    
-    // activate new tab and panel
-    event.target.parentElement.className += ' active';
-    document.getElementById(event.target.href.split('#')[1]).className += ' active';
+  
+  const elements = document.querySelectorAll('#nav-tab li');
+  const paragraphs = document.querySelectorAll('.tab-pane');
+  
+  for (let i = 0; i < elements.length; i++) {
+    elements[i].addEventListener('click', (ev) => {
+      for (let j = 0; j < paragraphs.length; j++) {
+        if (paragraphs[j].classList.contains('active')) {
+          paragraphs[j].classList.remove('active');
+          break;
+        }
+      }
+      paragraphs[i].classList.add('active');
+    })
   }
-  
-  const element = document.getElementById('nav-tab');
-  
-  element.addEventListener('click', onTabClick, false);
