@@ -37,7 +37,7 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 10;
   height: 5.2vw;
 }
 
@@ -157,6 +157,9 @@ section:nth-of-type(2) div div img:hover {
 
 section:nth-of-type(2) div div ul {
   display: none;
+  flex-direction: column;
+  margin-top: 2vw;
+  align-items: center;
 }
 
 section:nth-of-type(2) div div ul a {
@@ -165,11 +168,8 @@ section:nth-of-type(2) div div ul a {
   margin-top: 1.5vw;
 }
 
-section:nth-of-type(2) div div .imgMenu {
+.imgMenu {
   display: block;
-  flex-direction: column;
-  margin-top: 2vw;
-  align-items: center;
 }
 
 body section#offer {
