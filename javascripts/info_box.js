@@ -13,5 +13,4 @@ for (let i = 0; i < imgDiv2.length; i++){
     }
     imgMenuClick[i].classList.add("imgMenu");
   })
-
 }
