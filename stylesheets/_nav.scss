@@ -18,18 +18,18 @@
 display: flex;
 }
 
-nav{
+nav {
 display: flex;
 justify-content: space-between;
 background: rgba(44,44,47,0.8);
 position: fixed;
 top:0;
+left: 0;
 width: 100%;
 z-index: 10;
 height:5.2vw;
 span{
   align-self: center;
-  display: flex;
   list-style-type: none;
   margin:0 2vw;
   color: darkgray;
@@ -70,5 +70,9 @@ span{
         }
       }
     }
+  }
+  svg.hamburger {
+    color: white;
+    z-index: 99999;
   }
 }

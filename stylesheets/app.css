@@ -33,6 +33,7 @@ nav {
   background: rgba(44, 44, 47, 0.8);
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
   z-index: 10;
   height: 5.2vw;
@@ -40,10 +41,8 @@ nav {
 
 nav span {
   -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
       align-self: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   list-style-type: none;
   margin: 0 2vw;
   color: darkgray;
@@ -90,6 +89,11 @@ nav ul li ul a {
 nav ul li ul a:hover {
   background: rgba(199, 199, 216, 0.5);
   border-bottom: 2px solid white;
+}
+
+nav svg.hamburger {
+  color: white;
+  z-index: 99999;
 }
 
 section.slider {
